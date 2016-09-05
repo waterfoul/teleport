@@ -22,4 +22,5 @@ ENV NODENAME='dockertest' \
     SSL_KEY='/etc/teleport/teleport.key' \
     SSL_CRT='/etc/teleport/teleport.crt' \
     DEFAULT_USER='admin' \
-    PREGEN_TOKEN='PREGEN_TOKEN'
+    PREGEN_TOKEN='PREGEN_TOKEN' \
+    ALLOWED_USERS=''

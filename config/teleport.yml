@@ -61,7 +61,7 @@ auth_service:
 
 # This section configures the 'node service':
 ssh_service:
-    enabled: no
+    enabled: yes
     # IP and the port for SSH service to bind to. 
     listen_addr: 0.0.0.0:3022
     # See explanation of labels in "Labeling Nodes" section below
@@ -109,5 +109,5 @@ proxy_service:
 
     # TLS certificate for the HTTPS connection. Configuring these properly is 
     # critical for Teleport security.
-    https_key_file: /etc/teleport/teleport.key
-    https_cert_file: /etc/teleport/teleport.crt
+    #https_key_file: /etc/teleport/teleport.key
+    #https_cert_file: /etc/teleport/teleport.crt
