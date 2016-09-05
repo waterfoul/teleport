@@ -24,4 +24,5 @@ ENV NODENAME='dockertest' \
     DEFAULT_USER='admin' \
     PREGEN_TOKEN='PREGEN_TOKEN' \
     ALLOWED_USERS='' \
-    WEB_PORT='3080'
+    WEB_PORT='3080' \
+    SSH_PORT='3022'
