@@ -1,7 +1,10 @@
 FROM frolvlad/alpine-glibc
 
 ENV NODENAME='dockertest'
-ENV AUTH_TOKEN='41c0c66c55ef2dcc382f6358919ef3f2'
+ENV AUTH_TOKEN=''
+ENV ADVERTIZE_IP='10.1.0.5'
+ENV SSL_KEY='/etc/teleport/teleport.key'
+ENV SSL_CRT='/etc/teleport/teleport.crt'
 
 RUN apk add --no-cache go wget make
 WORKDIR /tmp

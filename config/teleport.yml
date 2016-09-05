@@ -22,8 +22,7 @@ teleport:
     # list of auth servers in a cluster. you will have more than one auth server
     # if you configure teleport auth to run in HA configuration
     auth_servers: 
-        - 10.1.0.5:3025
-        - 10.1.0.6:3025
+        - localhost:3025
 
     # Teleport throttles all connections to avoid abuse. These settings allow
     # you to adjust the default limits
@@ -63,7 +62,7 @@ auth_service:
 
 # This section configures the 'node service':
 ssh_service:
-    enabled: yes
+    enabled: no
     # IP and the port for SSH service to bind to. 
     listen_addr: 0.0.0.0:3022
     # See explanation of labels in "Labeling Nodes" section below
